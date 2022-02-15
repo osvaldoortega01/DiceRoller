@@ -11,9 +11,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         val rollButton: Button = findViewById(R.id.button)
-        rollButton.setOnClickListener {
-            rollDice()
-        }
+        rollButton.setOnClickListener { rollDice() }
     }
 
     private fun rollDice() {
@@ -28,6 +26,6 @@ class MainActivity : AppCompatActivity() {
 class Dice(private val numSides: Int) {
 
     fun roll(): Int {
-        return (1..numSides).random()
+        return 1
     }
 }
